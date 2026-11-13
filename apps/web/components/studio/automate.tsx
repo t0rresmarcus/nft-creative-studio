@@ -79,7 +79,7 @@ export function Automate({ project }: { project: Project }) {
       <Panel title="Recipe">
         <div className="mb-4 flex flex-wrap gap-2">
           {catalog.map((item) => (
-            <button key={item.type} className="rounded-full border border-white/10 px-3 py-1 text-xs text-mute hover:text-lime" onClick={() => addOp(item.type)}>{item.label}</button>
+            <button key={item.type} className="rounded-full border border-white/10 px-3 py-1 text-xs text-mute hover:text-purple" onClick={() => addOp(item.type)}>{item.label}</button>
           ))}
         </div>
         <ol className="space-y-3">
@@ -123,7 +123,7 @@ export function Automate({ project }: { project: Project }) {
       <Panel title="Source images">
         <div className="grid grid-cols-2 gap-2 md:grid-cols-6">
           {assets.filter((asset) => asset.kind !== "preview").slice(0, 24).map((asset) => (
-            <button key={asset.id} onClick={() => setSelected((current) => current.includes(asset.id) ? current.filter((id) => id !== asset.id) : [...current, asset.id])} className={`overflow-hidden rounded-xl border ${selected.includes(asset.id) ? "border-lime" : "border-white/10"}`}>
+            <button key={asset.id} onClick={() => setSelected((current) => current.includes(asset.id) ? current.filter((id) => id !== asset.id) : [...current, asset.id])} className={`overflow-hidden rounded-xl border ${selected.includes(asset.id) ? "border-purple" : "border-white/10"}`}>
               <img src={fileUrl(asset.thumb_url)} alt="" className="aspect-square w-full object-cover" />
             </button>
           ))}

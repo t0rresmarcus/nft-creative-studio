@@ -45,12 +45,12 @@ export function Workspace() {
   return (
     <div className="min-h-screen md:grid md:grid-cols-[240px_1fr]">
       <aside className="border-b border-white/10 p-5 md:border-b-0 md:border-r">
-        <Link href="/studio" className="text-xs tracking-[0.18em] text-lime">STUDIO</Link>
+        <Link href="/studio" className="text-xs tracking-[0.18em] text-purple">STUDIO</Link>
         <h1 className="mt-3 font-serif text-3xl leading-none">{project.name}</h1>
         <p className="mt-2 text-xs uppercase tracking-[0.14em] text-mute">{project.project_type} · {project.canvas_width}×{project.canvas_height}</p>
         <nav className="mt-6 flex gap-2 overflow-auto md:block md:space-y-1">
           {NAV.map(([id, label]) => (
-            <button key={id} onClick={() => setTab(id)} className={`block rounded-full px-3 py-2 text-left text-sm md:w-full ${tab === id ? "bg-lime text-ink" : "text-mute hover:text-paper"}`}>
+            <button key={id} onClick={() => setTab(id)} className={`block rounded-full px-3 py-2 text-left text-sm md:w-full ${tab === id ? "bg-purple text-ink" : "text-mute hover:text-paper"}`}>
               {label}
             </button>
           ))}

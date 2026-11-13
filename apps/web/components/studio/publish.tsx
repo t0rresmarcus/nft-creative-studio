@@ -111,7 +111,7 @@ export function Publish({ project }: { project: Project }) {
           {items.slice(0, 8).map((item) => (
             <div key={item.id} className="rounded-full border border-white/10 px-3 py-1 text-xs">
               #{item.token_id}
-              <button className="ml-2 text-lime" onClick={() => decide(item.id, "approved")}>Approve</button>
+              <button className="ml-2 text-purple" onClick={() => decide(item.id, "approved")}>Approve</button>
               <button className="ml-2 text-ember" onClick={() => decide(item.id, "rejected")}>Reject</button>
             </div>
           ))}

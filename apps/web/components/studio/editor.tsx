@@ -125,7 +125,7 @@ export function Editor({ project }: { project: Project }) {
       <Panel title="Files">
         <div className="max-h-[640px] space-y-2 overflow-auto">
           {assets.map((item) => (
-            <button key={item.id} className={`block w-full rounded-xl text-left text-xs ${asset?.id === item.id ? "text-lime" : "text-mute"}`} onClick={() => setAsset(item)}>
+            <button key={item.id} className={`block w-full rounded-xl text-left text-xs ${asset?.id === item.id ? "text-purple" : "text-mute"}`} onClick={() => setAsset(item)}>
               {item.original_name}
             </button>
           ))}

@@ -76,7 +76,7 @@ export function Overview({ project, onProject }: { project: Project; onProject: 
         <ol className="grid gap-2 md:grid-cols-2">
           {steps.map((step, index) => (
             <li key={step.id} className="flex items-center gap-3 rounded-2xl border border-white/10 px-3 py-2 text-sm">
-              <span className={`grid h-7 w-7 place-items-center rounded-full text-xs ${step.done ? "bg-lime text-ink" : "bg-white/10 text-mute"}`}>{index + 1}</span>
+              <span className={`grid h-7 w-7 place-items-center rounded-full text-xs ${step.done ? "bg-purple text-ink" : "bg-white/10 text-mute"}`}>{index + 1}</span>
               <span className={step.done ? "text-paper" : "text-mute"}>{step.label}</span>
             </li>
           ))}
@@ -125,7 +125,7 @@ export function Overview({ project, onProject }: { project: Project; onProject: 
       <Panel title="Notes">
         <ul className="mb-4 space-y-3">
           {comments.map((item) => (
-            <li key={item.id} className="text-sm"><span className="text-lime">{item.author}</span> · {item.body}</li>
+            <li key={item.id} className="text-sm"><span className="text-purple">{item.author}</span> · {item.body}</li>
           ))}
         </ul>
         <form onSubmit={comment} className="flex gap-2">

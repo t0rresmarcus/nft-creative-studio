@@ -32,7 +32,7 @@ export default function RegisterPage() {
 
   return (
     <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6">
-      <Link href="/" className="mb-8 text-sm tracking-[0.18em] text-lime">
+      <Link href="/" className="mb-8 text-sm tracking-[0.18em] text-purple">
         NFT CREATIVE STUDIO
       </Link>
       <h1 className="font-serif text-4xl">Create an account</h1>
@@ -52,7 +52,7 @@ export default function RegisterPage() {
         </Button>
       </form>
       <p className="mt-6 text-sm text-mute">
-        Already registered? <Link href="/login" className="text-lime">Sign in</Link>
+        Already registered? <Link href="/login" className="text-purple">Sign in</Link>
       </p>
     </main>
   );

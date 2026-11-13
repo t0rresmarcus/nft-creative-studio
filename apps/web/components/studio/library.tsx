@@ -32,7 +32,7 @@ export function Library({ project, onPick }: { project: Project; onPick?: (asset
   return (
     <Panel title="Library" action={<span className="text-sm text-mute">{assets.length} files</span>}>
       {error ? <div className="mb-4"><Notice tone="bad">{error}</Notice></div> : null}
-      <label className="mb-5 flex cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-white/15 px-6 py-10 text-sm text-mute hover:border-lime">
+      <label className="mb-5 flex cursor-pointer flex-col items-center justify-center rounded-3xl border border-dashed border-white/15 px-6 py-10 text-sm text-mute hover:border-purple">
         Drop images or click to upload. Originals are stored by SHA-256 and never overwritten.
         <input className="hidden" type="file" accept="image/*" multiple onChange={(event) => upload(event.target.files)} />
       </label>

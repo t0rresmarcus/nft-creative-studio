@@ -9,7 +9,7 @@ module.exports = {
         line: "rgba(244,239,230,0.12)",
         paper: "#f4efe6",
         mute: "#a39e93",
-        lime: "#d6ff3f",
+        purple: "#c084fc",
         ember: "#ff5a36",
       },
       fontFamily: {

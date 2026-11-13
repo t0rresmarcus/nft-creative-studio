@@ -48,7 +48,7 @@ export default function StudioHome() {
     <main className="mx-auto max-w-6xl px-6 py-8">
       <header className="flex items-center justify-between">
         <div>
-          <p className="text-sm tracking-[0.18em] text-lime">STUDIO</p>
+          <p className="text-sm tracking-[0.18em] text-purple">STUDIO</p>
           <h1 className="font-serif text-4xl">{user ? `${user.name}'s projects` : "Projects"}</h1>
         </div>
         <div className="flex gap-2 text-sm">
@@ -71,7 +71,7 @@ export default function StudioHome() {
         <div className="grid gap-4 sm:grid-cols-2">
           {projects.length === 0 ? <Notice>No projects yet. Create one, or sign in as the demo artist.</Notice> : null}
           {projects.map((project) => (
-            <Link key={project.id} href={`/studio/${project.id}`} className="rounded-3xl border border-white/10 bg-panel p-5 hover:border-lime/50">
+            <Link key={project.id} href={`/studio/${project.id}`} className="rounded-3xl border border-white/10 bg-panel p-5 hover:border-purple/50">
               <p className="text-xs uppercase tracking-[0.16em] text-mute">{project.project_type}</p>
               <h2 className="mt-2 font-serif text-3xl">{project.name}</h2>
               <p className="mt-3 text-sm text-mute">{project.asset_count} files · {project.collection_count} collections · {project.role}</p>

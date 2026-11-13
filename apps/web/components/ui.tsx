@@ -6,10 +6,10 @@ export function Button({
   ...props
 }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "solid" | "ghost" | "ember" | "line" }) {
   const styles = {
-    solid: "bg-lime text-ink hover:bg-[#e7ff7a]",
+    solid: "bg-purple text-ink hover:bg-[#d8b4fe]",
     ghost: "bg-white/5 text-paper hover:bg-white/10",
     ember: "bg-ember text-white hover:bg-[#ff7354]",
-    line: "border border-white/15 text-paper hover:border-lime hover:text-lime",
+    line: "border border-white/15 text-paper hover:border-purple hover:text-purple",
   }[variant];
   return (
     <button
@@ -28,7 +28,7 @@ export function Field({ label, children }: { label: string; children: ReactNode 
   );
 }
 
-const control = "w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-paper outline-none focus:border-lime";
+const control = "w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-paper outline-none focus:border-purple";
 
 export function TextInput(props: InputHTMLAttributes<HTMLInputElement>) {
   return <input className={control} {...props} />;
@@ -43,7 +43,7 @@ export function Select(props: SelectHTMLAttributes<HTMLSelectElement>) {
 }
 
 export function Notice({ tone = "info", children }: { tone?: "info" | "bad" | "good"; children: ReactNode }) {
-  const toneClass = tone === "bad" ? "border-ember/40 text-ember" : tone === "good" ? "border-lime/40 text-lime" : "border-white/10 text-mute";
+  const toneClass = tone === "bad" ? "border-ember/40 text-ember" : tone === "good" ? "border-purple/40 text-purple" : "border-white/10 text-mute";
   return <p className={`rounded-2xl border px-4 py-3 text-sm ${toneClass}`}>{children}</p>;
 }
 

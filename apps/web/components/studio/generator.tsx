@@ -154,7 +154,7 @@ export function Generator({ project }: { project: Project }) {
                 {layer.traits.map((trait) => (
                   <div key={trait.name} className="mb-2">
                     <div className="flex justify-between text-xs text-mute"><span>{trait.name}</span><span>{trait.count} · {trait.percent}% / target {trait.target_percent}%</span></div>
-                    <div className="mt-1 h-1.5 rounded-full bg-white/10"><div className="h-full rounded-full bg-lime" style={{ width: `${Math.min(trait.percent, 100)}%` }} /></div>
+                    <div className="mt-1 h-1.5 rounded-full bg-white/10"><div className="h-full rounded-full bg-purple" style={{ width: `${Math.min(trait.percent, 100)}%` }} /></div>
                   </div>
                 ))}
               </div>
@@ -169,7 +169,7 @@ export function Generator({ project }: { project: Project }) {
               {item.thumb_url ? <img src={fileUrl(item.thumb_url)} alt="" className="aspect-square w-full rounded-xl object-cover" /> : <div className="grid aspect-square place-items-center rounded-xl bg-black/40 text-xs text-mute">Not rendered</div>}
               <p className="mt-2 text-sm">#{item.token_id}</p>
               <p className="text-xs text-mute">{item.attributes.map((attribute) => attribute.value).join(" · ")}</p>
-              <button className="mt-2 text-xs text-lime" onClick={() => regenerate(item.id)}>Regenerate this token</button>
+              <button className="mt-2 text-xs text-purple" onClick={() => regenerate(item.id)}>Regenerate this token</button>
             </article>
           ))}
         </div>

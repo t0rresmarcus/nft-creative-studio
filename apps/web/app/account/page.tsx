@@ -56,7 +56,7 @@ export default function AccountPage() {
   return (
     <main className="mx-auto max-w-5xl space-y-6 px-6 py-8">
       <header>
-        <p className="text-sm tracking-[0.18em] text-lime">ACCOUNT</p>
+        <p className="text-sm tracking-[0.18em] text-purple">ACCOUNT</p>
         <h1 className="font-serif text-4xl">{account.user.name}</h1>
         <p className="text-mute">{account.user.email}</p>
       </header>
@@ -74,7 +74,7 @@ export default function AccountPage() {
       </Panel>
       <div className="grid gap-4 md:grid-cols-2">
         {Object.entries(account.plans).map(([id, plan]) => (
-          <article key={id} className={`rounded-3xl border p-5 ${account.user.plan === id ? "border-lime" : "border-white/10"}`}>
+          <article key={id} className={`rounded-3xl border p-5 ${account.user.plan === id ? "border-purple" : "border-white/10"}`}>
             <h2 className="font-serif text-2xl">{plan.label}</h2>
             <p className="mt-1 text-sm text-mute">{plan.blurb}</p>
             <p className="mt-3 text-sm">{plan.projects} projects · {plan.supply} supply · {plan.credits} credits · ${plan.price}/mo</p>

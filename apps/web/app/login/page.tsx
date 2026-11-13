@@ -32,7 +32,7 @@ export default function LoginPage() {
 
   return (
     <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6">
-      <Link href="/" className="mb-8 text-sm tracking-[0.18em] text-lime">
+      <Link href="/" className="mb-8 text-sm tracking-[0.18em] text-purple">
         NFT CREATIVE STUDIO
       </Link>
       <h1 className="font-serif text-4xl">Sign in</h1>
@@ -50,7 +50,7 @@ export default function LoginPage() {
         </Button>
       </form>
       <p className="mt-6 text-sm text-mute">
-        New here? <Link href="/register" className="text-lime">Create an account</Link>
+        New here? <Link href="/register" className="text-purple">Create an account</Link>
       </p>
     </main>
   );
