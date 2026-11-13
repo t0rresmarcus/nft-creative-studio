@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>NFT Creative Studio — influencer brief</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: #0c0c0b;
+    color: #f4efe6;
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1, h2, h3 { font-family: "Iowan Old Style", Palatino, Georgia, serif; font-weight: 500; margin: 0; }
+  p { margin: 0; }
+  .sheet {
+    break-after: page;
+    page-break-after: always;
+    min-height: 9.4in;
+    display: flex;
+    flex-direction: column;
+  }
+  .sheet:last-child { break-after: auto; page-break-after: auto; }
+  .kicker {
+    color: #c084fc;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  h1 { font-size: 48px; line-height: 1.02; letter-spacing: -0.02em; }
+  h2 { font-size: 32px; line-height: 1.08; }
+  .lede { margin-top: 16px; max-width: 38rem; font-size: 16px; line-height: 1.45; color: #c9c3b8; }
+  .shot {
+    margin-top: 18px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(192, 132, 252, 0.35);
+  }
+  .caption { margin-top: 10px; font-size: 12px; line-height: 1.4; color: #a39e93; }
+  ul { margin: 14px 0 0; padding: 0; list-style: none; }
+  li {
+    margin-top: 10px;
+    padding-left: 16px;
+    border-left: 2px solid #c084fc;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 22px; }
+  .card {
+    border: 1px solid rgba(244, 239, 230, 0.12);
+    border-radius: 16px;
+    padding: 16px 16px 18px;
+    background: #161614;
+  }
+  .card h3 { font-size: 20px; margin-bottom: 6px; }
+  .card p { font-size: 13px; line-height: 1.45; color: #c9c3b8; }
+  .foot { margin-top: auto; padding-top: 16px; font-size: 11px; color: #7d786f; }
+  .cover { justify-content: flex-end; }
+  .cover h1 { font-size: 58px; max-width: 11ch; }
+  .rule { height: 1px; background: rgba(192, 132, 252, 0.45); margin: 22px 0; }
+</style>
+</head>
+<body>
+
+<section class="sheet cover">
+  <p class="kicker">Influencer brief · November 2026</p>
+  <h1 style="margin-top: 18px;">From raw frames to a mint-ready collection.</h1>
+  <p class="lede">NFT Creative Studio is one workspace for the edit, the trait stack, the rarity rules, the metadata, and the export. Invalid combinations are blocked while the collection is planned, not after a thousand files have been rendered.</p>
+  <div class="rule"></div>
+  <p class="caption">A local studio for artists. These pages are the product as it runs today. The sample project is Signal Portraits.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">How to talk about it</p>
+  <h2 style="margin-top: 10px;">Three lines that stay true</h2>
+  <ul>
+    <li>Plan the collection first. Weights, exact counts, and pairs that cannot appear together are settled before the render.</li>
+    <li>The same seed, the same trait setup, and the same source files produce the same batch.</li>
+    <li>One drop can leave as ERC-721 JSON, Metaplex JSON, a spreadsheet, and a ZIP with a validation report.</li>
+  </ul>
+  <div class="grid">
+    <article class="card">
+      <h3>Who it is for</h3>
+      <p>Artists and small teams making a generative set or a photo batch, who want the edit and the drop in the same place.</p>
+    </article>
+    <article class="card">
+      <h3>What it is not</h3>
+      <p>It does not deploy a contract and it does not take payment. Switching plans is a local stand-in for billing. Image work that needs a model uses an optional worker you point it at.</p>
+    </article>
+  </div>
+  <p class="foot">Say “studio” or “workspace.” The product composites trait layers. It is not a hosted image model unless the artist connects one.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Home</p>
+  <h2 style="margin-top: 10px;">The front door</h2>
+  <p class="lede">The opening line, the sample collection, and the two ways in: start a project, or open the demo.</p>
+  <img class="shot" src="home-hero.png" alt="Home page with the headline and four sample artworks" />
+  <p class="caption">Home. Four sample frames sit beside the headline.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Home</p>
+  <h2 style="margin-top: 10px;">The path, then the tools</h2>
+  <p class="lede">Five steps from a new project to the export, then the six areas of the studio.</p>
+  <img class="shot" src="home-features.png" alt="Workflow of five steps and six feature cards" />
+  <p class="caption">Create the project, upload layers, set weights and rules, plan then render, validate and export.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Studio</p>
+  <h2 style="margin-top: 10px;">Every project in one list</h2>
+  <p class="lede">An artist can keep more than one collection. The demo account already holds Signal Portraits, a generative set with 28 files.</p>
+  <img class="shot" src="studio.png" alt="Project list and the new project form" />
+  <p class="caption">Projects. A new collection takes a name, a type, a canvas size, and a license.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Overview</p>
+  <h2 style="margin-top: 10px;">A production path you can check off</h2>
+  <p class="lede">Signal Portraits shows where the drop stands: thirteen steps from the project itself through marketplace prep. Roles, notes, and the people on the project live on the same page.</p>
+  <img class="shot" src="overview.png" alt="Production path checklist inside a project" />
+  <p class="caption">Overview. Completed steps are marked. The rest stay open until the work is done.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Library</p>
+  <h2 style="margin-top: 10px;">Originals, stored once</h2>
+  <p class="lede">Artwork is uploaded, hashed, and kept. The same file is never overwritten. Thumbnails are what the rest of the studio reads from.</p>
+  <img class="shot" src="library.png" alt="Library grid of trait images" />
+  <p class="caption">Library. Signal Portraits keeps backgrounds, figures, eyes, and marks as separate files.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Traits</p>
+  <h2 style="margin-top: 10px;">Layers, weights, and counts</h2>
+  <p class="lede">Bottom layers render first. Drag to reorder. A weight is a chance. An exact count, set on every trait in a layer, is a promise.</p>
+  <img class="shot" src="traits.png" alt="Background layer with trait weights" />
+  <p class="caption">Traits. Backgrounds in the sample set: Citrus, Dusk, and Noir.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Editor</p>
+  <h2 style="margin-top: 10px;">Crop, color, and a saved version</h2>
+  <p class="lede">Pick a file, adjust it on the canvas, and save a version on the server so the file matches the recipe. Undo and redo stay with the edit.</p>
+  <img class="shot" src="editor.png" alt="Editor canvas showing a trait on a checkerboard" />
+  <p class="caption">Editor canvas. The selected trait sits on a checkerboard so a transparent edge stays visible.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Generate</p>
+  <h2 style="margin-top: 10px;">Plan the drop, then render it</h2>
+  <p class="lede">Supply, seed, and schema are set before a single image is written. Rarity is shown against the target so a layer that drifted is visible.</p>
+  <img class="shot" src="generate.png" alt="Collection setup and rarity bars" />
+  <p class="caption">Generate. Signal Portraits Drop is a 12-token ERC-721 set, seed 7, aimed at OpenSea.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Automate</p>
+  <h2 style="margin-top: 10px;">A recipe you can run twice</h2>
+  <p class="lede">Resize, sharpen, change format, rename. Save the recipe, dry-run it, then run the batch. The same recipe on the same files does the same work.</p>
+  <img class="shot" src="automate.png" alt="Batch recipe with resize, sharpen, format, and rename" />
+  <p class="caption">Automate. This recipe cover-crops to 640 and writes PNG files named from the project and the index.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Metadata and export</p>
+  <h2 style="margin-top: 10px;">Twelve tokens, ready to leave</h2>
+  <p class="lede">Each token has a name, an image address, and the traits that built it. The same table downloads as CSV. The ZIP adds images, JSON, provenance, and the validation report.</p>
+  <img class="shot" src="publish.png" alt="Metadata table for Signal Portraits Drop" />
+  <p class="caption">Metadata. Token 1 is Dusk, Block, Line, Dash. The export also offers a ZIP and an optional Pinata upload.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">AI</p>
+  <h2 style="margin-top: 10px;">Cuts and cleanup, when you want them</h2>
+  <p class="lede">Corner background removal runs in the studio. A connected worker can take the harder cutout. Enhance, a corner fill, and variations are on the same screen.</p>
+  <img class="shot" src="ai.png" alt="AI studio with a selected trait and action buttons" />
+  <p class="caption">AI studio. Optional. A remote model is used only when one is configured.</p>
+</section>
+
+<section class="sheet">
+  <p class="kicker">Try the demo</p>
+  <h2 style="margin-top: 10px;">Signal Portraits is already loaded</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Sign in</h3>
+      <p>demo@nftstudio.local<br />demo-studio-123</p>
+    </article>
+    <article class="card">
+      <h3>Open</h3>
+      <p>The project list, then Signal Portraits. Plan the collection, render it, then download the ZIP.</p>
+    </article>
+  </div>
+  <p class="lede">The studio runs locally: the site on port 3000, the API on port 8000. These screenshots were taken there. There is no public deployment in this brief.</p>
+  <div class="rule"></div>
+  <p class="caption">Please don’t describe it as a mint button, a marketplace, or a model that draws the artwork from a prompt. It edits, stacks, generates unique combinations, checks the drop, and exports the files.</p>
+  <p class="foot">NFT Creative Studio · influencer brief · November 2026</p>
+</section>
+
+</body>
+</html>
